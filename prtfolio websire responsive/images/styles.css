@@ -1,0 +1,327 @@
+/* General Styles */
+/* styles.css */
+
+
+/* Header */
+header {
+    background-color: #b94242;
+    border-bottom: 2px solid #ddd;
+}
+
+
+body {
+    background-image: url('..bg1.jpg'); /* Path relative to the CSS file */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+    /* styles.css */
+.hero-section {
+
+
+        background-image: url('..jpg'); /* Replace with your image path */
+        background-size: cover; /* Cover the entire section */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        height: 500px; /* Adjust height as needed */
+        color: white; /* Optional: change text color to ensure readability */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        height: 500px; /* Adjust height as needed */
+        color: white; /* Optional: change text color to ensure readability */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('C:\Users\thaku\OneDrive\Desktop\prtfolio websire responsive\web image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Place the overlay behind the content */
+}
+
+
+
+/* styles.css */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+}
+
+
+
+#portfolio-label {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navigation Bar */
+.nav-link {
+    color: #333;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Social Media Icons */
+#social-icons a {
+    margin-left: 10px;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+#social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Main Content */
+#home {
+    background-color: #f8f9fa;
+
+   /* styles.css */
+.typing-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.typing-text {
+    font-size: 2rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #333;
+    animation: typing 2s steps(40, end), blink-caret .30s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+
+/* styles.css */
+.share-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.share-buttons .btn {
+    margin: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+/* 3D Image */
+#image-section {
+    position: absolute;
+    right: 5px;
+    bottom: 260px;
+    padding: 20px;
+}
+
+#profile-image {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease;
+}
+
+#profile-image:hover {
+    transform: scale(1.1);
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+.resume-section {
+    margin-bottom: 20px;
+}
+
+.resume-section h4 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.resume-section p, .resume-section ul {
+    margin-left: 20px;
+}
+
+.resume-section ul {
+    list-style-type: disc;
+}
+
+
+/* Skills Section */
+#skills h4 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.skills-list li:hover {
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+/* Portfolio Section */
+#portfolio h3 {
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.card {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+/* Contact Section */
+#contact h3 {
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+#contact .list-unstyled li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+#contact .list-unstyled li i {
+    color: #007bff;
+    margin-right: 10px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #fff;
+    border-top: 2px solid #ddd;
+}
+
+#footer-social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #image-section {
+        position: static;
+        text-align: center;
+    }
+}

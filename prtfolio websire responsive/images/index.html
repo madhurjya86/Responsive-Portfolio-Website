@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhurjya's Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+    <header class="d-flex justify-content-between align-items-center p-3 bg-light">
+        <div id="portfolio-label" class="text-primary">Portfolio</div>
+        <nav class="navbar">
+            <ul class="nav">
+                <div id="header-placeholder"> <li class="nav-item"><a href="#home" class="nav-link">Home</a></li></div>
+                <div id="header-placeholder">  <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li></div>
+                    <div id="header-placeholder"> <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li></div>
+                        <div id="header-placeholder"><li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li></div>
+                            <div id="header-placeholder"><li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li></div>
+            </ul>
+        </nav>
+        <div id="social-icons">
+            <a href="#" class="text-dark"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-dark"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+       
+       
+    </header>
+
+    <!-- Main Content -->
+    <section id="home" class="text-center d-flex flex-column justify-content-center" style="height: 100vh;">
+        <main>
+            <div class="container">
+                <div class="typing-container">
+                    <h1 class="typing-text"></h1>
+                </div>
+            </div>
+
+
+             <!-- Header -->
+    <div class="hero-section">
+        <!-- Your content here -->
+        <div style="background-image: url('C:\Users\thaku\OneDrive\Desktop\prtfolio websire responsive\images\bg1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 500px;">
+            <!-- Your content here -->
+        </div>
+    </div>
+            <!-- Share Buttons -->
+            <div class="share-buttons">
+                <button class="btn btn-primary" onclick="share('facebook')">Share on Facebook</button>
+                <button class="btn btn-info" onclick="share('twitter')">Share on Twitter</button>
+                <button class="btn btn-primary" onclick="share('linkedin')">Share on LinkedIn</button>
+            </div>
+        </main>
+    </section>
+
+    <!-- 3D Image -->
+    <div id="image-section" class="d-flex justify-content-end">
+        <img src="c:\Users\thaku\OneDrive\Pictures\portimage.jpg" alt="Madhurjya's 3D Image" id="profile-image">
+    </div>
+
+    <!-- Resume Section -->
+    <section id="resume" class="container mt-5">
+        <h3>Resume</h3>
+    
+        <!-- Professional Summary -->
+        <div class="resume-section">
+            <h4>Professional Summary</h4>
+            <p>A highly motivated Full Stack Developer with a passion for building efficient and scalable web applications. Proficient in HTML, CSS, JavaScript, and various backend technologies. Adept at collaborating with teams and delivering projects on time.</p>
+        </div>
+    
+        <!-- Skills -->
+        <div class="resume-section">
+            <h4>Skills</h4>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Bootstrap, React</li>
+                <li>Node.js, Express.js</li>
+                <li>MongoDB, MySQL</li>
+                <li>Version Control (Git)</li>
+            </ul>
+        </div>
+    
+        <!-- Education -->
+        <div class="resume-section">
+            <h4>Education</h4>
+            <p>B.Tech in Computer Science and Engineering<br>
+               GCU, Azara, Guwahati, 2024</p>
+        </div>
+    
+        <!-- Experience -->
+        <div class="resume-section">
+            <h4>Experience</h4>
+            <p><strong>Developer (Intern)</strong><br>
+               XYZ Company, June 2024 - August 2024<br>
+               Developed and maintained web applications using Node.js and React. Collaborated with the design team to implement user-friendly interfaces.</p>
+        </div>
+    
+        <!-- Projects -->
+        <div class="resume-section">
+            <h4>Projects</h4>
+            <ul>
+                <li><strong>Smart Campus Management System</strong> - Developed a responsive web application for managing campus resources and events.</li>
+                <li><strong>Portfolio Website</strong> - Created a personal portfolio website using HTML, CSS, and JavaScript to showcase skills and projects.</li>
+            </ul>
+        </div>
+    
+        <!-- Certifications -->
+        <div class="resume-section">
+            <h4>Certifications</h4>
+            <ul>
+                <li>Full Stack Web Development - Coursera</li>
+                <li>JavaScript Algorithms and Data Structures - freeCodeCamp</li>
+            </ul>
+        </div>
+    
+        <!-- Contact Information -->
+        <div class="resume-section">
+            <h4>Contact Information</h4>
+            <p>Email: madhurjya@example.com<br>
+               Phone: +91-1234567890<br>
+               LinkedIn: <a href="#">linkedin.com/in/madhurjya</a></p>
+        </div>
+    </section>
+    
+        <!-- Skills Information -->
+    <section id="skills" class="container mt-5">
+        <h3>Skills</h3>
+        <div class="row">
+            <!-- Frontend Skills -->
+            <div class="col-md-4">
+                <h4>Frontend</h4>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>React</li>
+                </ul>
+            </div>
+            <!-- Backend Skills -->
+            <div class="col-md-4">
+                <h4>Backend</h4>
+                <ul class="skills-list">
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>MongoDB</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+            <!-- Other Skills -->
+            <div class="col-md-4">
+                <h4>Other</h4>
+                <ul class="skills-list">
+                    <li>Git & Version Control</li>
+                    <li>RESTful APIs</li>
+                    <li>Problem Solving</li>
+                    <li>Team Collaboration</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+    
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container mt-5">
+        <h3>Portfolio</h3>
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="project1-thumbnail.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Campus Management System</h5>
+                        <p class="card-text">A responsive web application for managing campus resources and events.</p>
+                        <a href="https://link-to-project1.com" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="project2-thumbnail.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio Website</h5>
+                        <p class="card-text">A personal portfolio website showcasing skills and projects.</p>
+                        <a href="https://link-to-project2.com" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="project3-thumbnail.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">E-commerce Website</h5>
+                        <p class="card-text">An online store built with Node.js and React, featuring a fully functional shopping cart.</p>
+                        <a href="https://link-to-project3.com" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mt-5">
+        <h3>Contact Me</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <form action="https://example.com/contact" method="post">
+                    <!-- Name Field -->
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+    
+                    <!-- Email Field -->
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+    
+                    <!-- Subject Field -->
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+    
+                    <!-- Message Field -->
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+    
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+    
+            <!-- Contact Information -->
+            <div class="col-md-4">
+                <h4>Get in Touch</h4>
+                <p>You can also reach out to me through the following:</p>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-envelope"></i> Email: <a href="mailto:madhurjya@example.com">thakuriamadhurjya09@gmail.com</a></li>
+                    <li><i class="bi bi-phone"></i> Phone: +91-6002533349</li>
+                    <li><i class="bi bi-linkedin"></i> LinkedIn: <a href="#">https://www.linkedin.com/in/madhurjya-thakuria-858a57282/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BAfF9pu%2BCTlC0UeRsQgLiqg%3D%3D</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="text-center p-3 bg-light">
+        <p>&copy; 2024 Madhurjya Thakuria. All rights reserved.</p>
+        <div id="footer-social-icons">
+            <a href="#" class="text-dark"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-dark"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js">
+        // JavaScript to load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
